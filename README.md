@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Stock-Selection-For-Intraday</title>
-</head>
 <body>
   <h1>Stock-Selection-For-Intraday</h1>
 
@@ -15,7 +12,7 @@
     <li>Identify potential trading opportunities</li>
     </ul>
 
-  <h2>Steps for Using the Sheet:</h2>
+  <h2>Steps for Creating/Using the Sheet:</h2>
   <ol>
     <li><strong>Download Bhavcopy File:</strong> From <a href="https://www.nseindia.com/all-reports">https://www.nseindia.com/all-reports</a>, download the "Bhavcopy File(DAT)" file containing daily market data.</li>
     <li><strong>Extract and Import Data:</strong> Extract the downloaded file and open the Excel sheet in Google Sheets.</li>
