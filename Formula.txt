@@ -1,0 +1,32 @@
+☣️ Symbol Formula :- 
+="NSE:"&A2
+
+💴 CMP/LTP Formula :- 
+=GOOGLEFINANCE(B2,"price")
+
+🈺 Open Price Formula :-
+=GOOGLEFINANCE(B2,"PRICEOPEN")
+
+⚡️ High Formula :- 
+=GOOGLEFINANCE(B2,"HIGH")
+
+🪫 Low Formula :- 
+=GOOGLEFINANCE(B2,"LOW")
+
+⛓ Pre. Close Formula :- 
+=GOOGLEFINANCE(B2,"CLOSEYEST")
+
+📊 Volume Formula :- 
+=GOOGLEFINANCE(B2,"VOLUME")
+
+🕊 Gain/Loss Formula :- 
+=C2-D2
+
+🥶 Buy/Sell Formula :- 
+=IF(D2=E2,"SELL",IF(D2=F2,"BUY"))
+
+🅰️ 10 DMA Formula :- 
+=AVERAGE(QUERY(SORT(GOOGLEFINANCE(B2,"price",TODAY()-365,TODAY()),1,0),"select Col2 limit 200"))
+
+💹 10 Day Chart Formula :- 
+=SPARKLINE(index(GOOGLEFINANCE(B2,"PRICE",WORKDAY(TODAY(),-$L$1), TODAY()),,2),{"CHARTTYPE","COLUMN";"COLOR","GREEN"})
